@@ -13,6 +13,8 @@ import Service from './Pages/Service'
 import Footer from './Ccmponets/Footer'
 import Customer from './Pages/Customer '
 import Professional from './Pages/Professional';
+import Listing from './Ccmponets/Listing';
+import ListingDetails from './Ccmponets/ListingDetails';
 
 
 
@@ -42,6 +44,9 @@ function App() {
             <Route path="/massage" element={<Massage/>} />
             <Route path="/customer" element={<Customer />} />
             <Route path="/professional" element={<Professional />} />
+            <Route path="/listing" element={<Listing />} />
+            <Route path='/listingdetails' element= {<ListingDetails/>}/>
+
         </Routes>
     </div>
 

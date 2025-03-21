@@ -24,13 +24,12 @@ const navigate = useNavigate();
     navigate("/Login");
 
 };
-
     return (
         <div className="min-h-screen flex">
         {/* Left Section (Form) */}
         <div className="w-1/2 bg-white flex  
         
-        flex-col justify-center items-center     mt-20 p-5">
+        flex-col justify-center items-center mt-20 p-5">
           <button className="self-start mb-4  flex items-center text-gray-700 hover:text-gray-900"
           onClick={handleLoginRedirect}
           >
