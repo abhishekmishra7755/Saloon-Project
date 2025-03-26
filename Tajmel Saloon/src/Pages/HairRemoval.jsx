@@ -1,4 +1,5 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom'
 import { FaWineBottle } from 'react-icons/fa';
 import { SearchIcon, MapPin, Calendar} from 'lucide-react';
 import Haircont from '../assets/img/Haircont.png'
@@ -16,6 +17,15 @@ import m4 from '../assets/img/m4.png'
 import m5 from '../assets/img/m5.png'
 
 const HairRemoval = () => {
+
+ const navigate = useNavigate();
+ const handleclick = () => {
+  navigate('/Listing')
+ };
+
+
+
+
     return (
         <div className='w-full h-full'>
         <div className=" overflow-x-hidden w-full   h-screen">
@@ -125,7 +135,7 @@ const HairRemoval = () => {
           
           <div className="flex flex-row  space-x-4">
           <div className="flex flex-col     w-100  h-30 focus:outline-none items-start space-y-2 mt-4">
-            <p className=" ml-3  mt-3 font-bold">Deep Tissue Massage </p>
+            <p className=" ml-3  mt-3    hover:text-[#EE2478] cursor-pointer  font-bold">Deep Tissue Massage </p>
             <div className="flex  ml-3 w-90 items-center">
              <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -135,11 +145,11 @@ const HairRemoval = () => {
             </div>
             
              
-            <button className=" underline ml-3 font-bold  text-black">Read More</button>
+            <button onClick={handleclick}
+            className=" underline ml-3 font-bold  hover:text-[#EE2478] cursor-pointer  text-black">Read More</button>
           </div>
-      
            <div className="flex flex-col w-100    focus:outline-none items-start space-y-2 mt-4">
-            <p className="  ml-3 mt-3 font-bold">Swedish Massage</p>
+            <p className="  ml-3 mt-3  hover:text-[#EE2478] cursor-pointer  font-bold">Swedish Massage</p>
             <div className="flex  ml-3 w-90 items-center">
              <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                                               to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -147,7 +157,8 @@ const HairRemoval = () => {
                                                   repetition, injected humour.</p>
             
             </div>
-            <button className="underline ml-3 font-bold  text-black">Read More</button>
+            <button onClick={handleclick}
+            className=" underline ml-3 font-bold  hover:text-[#EE2478] cursor-pointer  text-black">Read More</button>
           </div>
           <div className="flex flex-col     w-100 focus:outline-none items-start space-y-2 mt-4">
             <p className="  ml-3 mt-3 font-bold">Turkish Bath</p>
@@ -160,8 +171,8 @@ const HairRemoval = () => {
             </div>
           
            
-            <button className="underline ml-3 font-bold  text-black">Read More</button>
-
+            <button onClick={handleclick}
+            className=" underline ml-3 font-bold  hover:text-[#EE2478] cursor-pointer  text-black">Read More</button>
           </div>
          
           </div>
@@ -195,18 +206,19 @@ const HairRemoval = () => {
           
           <div className="flex flex-row  space-x-4">
           <div className="flex flex-col     w-100  h-30 focus:outline-none items-start space-y-2 mt-4">
-            <p className=" ml-3  mt-3 font-bold">Therapeutic Massage</p>
+            <p className=" ml-3   hover:text-[#EE2478] cursor-pointer  mt-3 font-bold">Therapeutic Massage</p>
             <div className="flex  ml-3 w-90 items-center">
              <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                to  generate  Lorem  Ipsum  which  looks  reasonable.  The
                    generated Lorem Ipsum is therefore always free from
                       epetition, injected humour.</p>
             </div>
-            <button className=" underline ml-3 font-bold  text-black">Read More</button>
+            <button onClick={handleclick}
+            className=" underline ml-3 font-bold  hover:text-[#EE2478] cursor-pointer  text-black">Read More</button>
           </div>
       
      <div className="flex flex-col w-100    focus:outline-none items-start space-y-2 mt-4">
-            <p className="  ml-3 mt-3 font-bold">Thai Massage</p>
+            <p className="  ml-3 mt-3   hover:text-[#EE2478] cursor-pointer  font-bold">Thai Massage</p>
             <div className="flex  ml-3 w-90 items-center">
              <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                                               to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -216,7 +228,8 @@ const HairRemoval = () => {
             </div>
          
    
-            <button className="underline ml-3 font-bold  text-black">Read More</button>
+            <button onClick={handleclick}
+            className=" underline ml-3 font-bold  hover:text-[#EE2478] cursor-pointer  text-black">Read More</button>
           </div>
           <div className="flex flex-col     w-100 focus:outline-none items-start space-y-2 mt-4">
             <p className="  ml-3 mt-3 font-bold">Aromatherapy Massage</p>
@@ -229,7 +242,8 @@ const HairRemoval = () => {
             </div>
           
            
-            <button className="underline ml-3 font-bold  text-black">Read More</button>
+            <button onClick={handleclick}
+            className=" underline ml-3 font-bold  hover:text-[#EE2478] cursor-pointer  text-black">Read More</button>
 
           </div>
          
@@ -391,7 +405,7 @@ const HairRemoval = () => {
           
           <div className="flex flex-row  space-x-4">
           <div className="flex flex-col     w-100  h-30 focus:outline-none items-start space-y-2 mt-4">
-            <p className=" ml-3  mt-3 font-bold">Body</p>
+            <p className=" ml-3   hover:text-[#EE2478] cursor-pointer  mt-3 font-bold">Body</p>
             <div className="flex  ml-3 w-90 items-center">
              <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -401,11 +415,13 @@ const HairRemoval = () => {
             </div>
             
              
-            <button className=" underline ml-3 font-bold  text-black">Read More</button>
+            <button
+               onClick={handleclick}
+             className=" underline ml-3 font-bold  hover:text-[#EE2478] cursor-pointer   text-black">Read More</button>
           </div>
       
      <div className="flex flex-col w-100    focus:outline-none items-start space-y-2 mt-4">
-            <p className="  ml-3 mt-3 font-bold">Face</p>
+            <p className="  ml-3  hover:text-[#EE2478] cursor-pointer  mt-3 font-bold">Face</p>
             <div className="flex  ml-3 w-90 items-center">
              <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                                               to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -415,10 +431,12 @@ const HairRemoval = () => {
             </div>
          
    
-            <button className="underline ml-3 font-bold  text-black">Read More</button>
+            <button 
+              onClick={handleclick}
+            className="underline ml-3 font-bold  hover:text-[#EE2478] cursor-pointer   text-black">Read More</button>
           </div>
           <div className="flex flex-col     w-100 focus:outline-none items-start space-y-2 mt-4">
-            <p className="  ml-3 mt-3 font-bold">Dental</p>
+            <p className="  ml-3  hover:text-[#EE2478] cursor-pointer  mt-3 font-bold">Dental</p>
             <div className="flex  ml-3 w-90 items-center">
              <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                                               to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -428,7 +446,9 @@ const HairRemoval = () => {
             </div>
           
            
-            <button className="underline ml-3 font-bold  text-black">Read More</button>
+            <button 
+              onClick={handleclick}
+            className="underline ml-3 font-bold  hover:text-[#EE2478] cursor-pointer  text-black">Read More</button>
 
           </div>
          
@@ -461,8 +481,8 @@ const HairRemoval = () => {
        <div className="relative  flex  h-40 w-70 -mt-4 -ml-0 max-w-lg mx-auto group">
           
           <div className="flex flex-row  space-x-4">
-          <div className="flex flex-col     w-100  h-30 focus:outline-none items-start space-y-2 mt-4">
-            <p className=" ml-3  mt-3 font-bold">Therapeutic Massage</p>
+          <div className="flex flex-col w-100  h-30 focus:outline-none items-start space-y-2 mt-4">
+            <p className=" ml-3    hover:text-[#EE2478] cursor-pointer  mt-3 font-bold">Therapeutic Massage</p>
             <div className="flex  ml-3 w-90 items-center">
              <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -472,11 +492,13 @@ const HairRemoval = () => {
             </div>
             
              
-            <button className=" underline ml-3 font-bold  text-black">Read More</button>
+            <button 
+              onClick={handleclick}
+            className=" underline ml-3 font-bold   hover:text-[#EE2478] cursor-pointer  text-black">Read More</button>
           </div>
       
      <div className="flex flex-col w-100    focus:outline-none items-start space-y-2 mt-4">
-            <p className="  ml-3 mt-3 font-bold">Thai Massage</p>
+            <p className="  ml-3   hover:text-[#EE2478] cursor-pointer  mt-3 font-bold">Thai Massage</p>
             <div className="flex  ml-3 w-90 items-center">
              <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                                               to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -486,7 +508,9 @@ const HairRemoval = () => {
             </div>
          
    
-            <button className="underline ml-3 font-bold  text-black">Read More</button>
+            <button 
+              onClick={handleclick}
+            className="underline ml-3   hover:text-[#EE2478] cursor-pointer  font-bold  text-black">Read More</button>
           </div>
           
           </div>

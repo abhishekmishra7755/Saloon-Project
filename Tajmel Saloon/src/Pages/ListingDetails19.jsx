@@ -25,6 +25,7 @@ import rw2 from '../assets/img/rw2.png'
 import rw3 from '../assets/img/rw3.png'
 import rw4 from '../assets/img/rw4.png'
 import { useNavigate } from 'react-router-dom';
+import ld18 from '../assets/img/ld18.jpg'
 
 
 
@@ -68,7 +69,7 @@ const reviews = [
 ];
 
 
-const ListingDetails = () => {
+const ListingDetails19 = () => {
 
   const navigate = useNavigate();  // Hook to navigate to another route
   const handleClick = () => {
@@ -85,7 +86,7 @@ const ListingDetails = () => {
     return (
         <div className='w-full h-full'>
         <div className='flex'>
-        <img src={cutting} alt='haircut'  className='mt-3  h-[600px]  w-[640px]'/>
+        <img src={ld18} alt='haircut'  className='mt-3  h-[600px]  w-[640px]'/>
         <div className='flex flex-col mt-15  
  '>
         <button
@@ -192,7 +193,7 @@ const ListingDetails = () => {
            <div className='flex mt-3'>
 
             <div className='flex flex-col bg-[#FBFAFA]  w-[660px] h-[350px] shadow-[#0000000D]'> 
-              <p className='font-bold text-[#000000]   ml-5 text-[20px]  mt-10 w-[200px] h-[20px]  font-[Brandon]'>Uptown Hair</p>
+              <p className='font-bold text-[#000000]   ml-5 text-[20px]  mt-10 w-[200px] h-[20px]  font-[Brandon]'>Ladies Leg Waxing</p>
               <p className='text-[#484848]  ml-5 font-sans text-[15px] w-[640px]  h-[62px]  mt-3  ' >Lorem ipsum  dolor sit  amet, consectetuer  adipiscing elit,  sed diam  nonummy  nibh  euismod
               tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
               <div className='flex w-[302px]  ml-5 gap-6 h-[25px]'>
@@ -685,22 +686,14 @@ const ListingDetails = () => {
                  <p className="text-gray-600 -mt-3  ml-2 ">Sector 57 Iraq Market</p>
                  <button className=" text-black ml-2 w-30 h-8  border border-[#ED2D77] mb-1 ">View Details</button>
                </div>
-          
-               
                </div>
-             
-                 </div>
-
-     </div>
-
-
-
-            
- </div>
+               </div>
+               </div>        
+                </div>
 
 
 
     );
 }
 
-export default ListingDetails;
+export default ListingDetails19;

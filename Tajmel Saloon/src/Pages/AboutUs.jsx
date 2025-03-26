@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState,useEffect } from "react";
 import Haircont from '../assets/img/Haircont.png'
 import { FaHeart, FaStar,FaShareAlt, FaSearch } from 'react-icons/fa';
 import abot1 from '../assets/img/abot1.png'
@@ -6,7 +6,35 @@ import { FaRocket, FaEye, FaGem } from 'react-icons/fa';
 import vission from '../assets/img/vission.png'
 import abq1 from '../assets/img/abq1.png'
 
+
 const AboutUs = () => {
+    
+   const [count, setCount] = useState(0);
+
+   function animateCount() {
+    let start = 0;
+    const end = 490000;
+    const duration = 1000; // 1 second
+    const increment = Math.ceil(end / (duration / 100));
+
+    const interval = setInterval(() => {
+      start += increment;
+      if (start >= end) {
+        setCount(end);
+        clearInterval(interval);
+      } else {
+        setCount(start);
+      }
+    }, 50);
+
+    return () => clearInterval(interval);
+  }
+  useEffect(animateCount, []);
+
+    
+ 
+    
+    
   const sections = [
     {
       icon: <img src={vission} sizes='' alt="icon" className="text-[#FFFFFF]" />,
@@ -68,20 +96,25 @@ const AboutUs = () => {
         </div>
                  <div className="flex  -ml-15 flex-col items-center">
                 <div className='flex items-center'>
-                <FaStar className="text-black -mt-3  w-[12px] h-[12px] ml-1" />
-                <span className=" -mt-3 text-xl   ml-2 font-semibold">4.6</span>
+                {/* <FaStar  className="text-black -mt-3  w-[12px] h-[12px] ml-1" /> */}
+                <span className=" -mt-3 text-[30px]   ml-2 font-semibold">
+                {Math.floor(count / 90000)} ★
+                </span>
                 </div>
                 <span  className=' font-sans   text-[14px]  text-[#000000]'>1.14K Reviews</span>
                </div>
 
                <div  className='flex  -ml-30 flex-col'>
-          <p className='font-bold  font-sans  text-[20px] text-[#000000]'>10 Lakh +</p>
+          <p className='font-bold  font-sans  text-[30px] text-[#000000]'>
+          {Math.floor(count / 49000)} Lakh +</p>
           <span  className=' font-sans  -ml-5 text-[14px]  text-[#000000]'>Appointments Booked</span>
         </div>
 
         <div  className='flex flex-col mr-30'>
-          <p className='font-bold  font-sans  text-[20px] text-[#000000]'>22+</p>
-          <span  className=' font-sans  text-[14px] -ml-20    text-[#000000]'>States with Tajmeel spot Available</span>
+          <p className='font-bold  font-sans  text-[30px] text-[#000000]'>
+          {Math.floor(count / 22000)}+ 
+            </p>
+          <span  className=' font-sans  text-[14px]  -ml-15   text-[#000000]'>States with Tajmeel spot Available</span>
         </div>
       </div>
 

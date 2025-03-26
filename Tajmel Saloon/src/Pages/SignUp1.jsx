@@ -12,7 +12,7 @@ import { Eye, EyeOff } from "lucide-react"; // Import icons for visibility toggl
 import { ImSpinner2 } from "react-icons/im"; // Loader Icon
 
 
-const SignUp= () => {
+const SignUp1 = () => {
     const navigate = useNavigate();
     const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -48,7 +48,7 @@ const SignUp= () => {
   }, [navigate]);
 
   const handleLoginRedirect = () =>{
-    navigate("/Customer");
+    navigate("/Professional");
 
 };
 
@@ -65,7 +65,7 @@ const SignUp= () => {
         >
           <ArrowLeft className="" /> 
         </button>
-        <h1 className="text-[25px]   w-[400px]  font-sans  -ml-30 font-bold text-[#000000]   mt-5">Sign Up for Customer Services</h1>
+        <h1 className="text-[25px]   w-[400px]  font-sans  -ml-30 font-bold text-[#000000]   mt-5">Sign Up for Professional Services</h1>
         <p className=" text-[#000000]  text-[20px] font-sans -ml-33 p-3 mb-2">Create an account to manage your business.
         </p>
             <div className='w-full min-h-screen  -ml-2.5'>
@@ -189,4 +189,4 @@ const SignUp= () => {
     );
 }
 
-export default SignUp;
+export default SignUp1;

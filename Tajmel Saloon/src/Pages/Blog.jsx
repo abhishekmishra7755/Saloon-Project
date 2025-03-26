@@ -15,6 +15,23 @@ import appapple from '../assets/img/appapple.png';
 import dl from '../assets/img/dl.png';
 import { IoCloudUploadOutline } from "react-icons/io5";
 
+import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper ,SwiperSlide } from "swiper/react";
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import dg1 from '../assets/img/dg1.png'
+import dg2 from '../assets/img/dg2.png'
+import db1 from '../assets/img/db1.png'
+import { Headphones,MessageCircleMore } from "lucide-react";
+
+
+
+
+
+const images = [f1, f2, f3, f4, f1, f3, f2, f2, f2];
+
 const Blog = () => {
 
   const features = [
@@ -40,8 +57,8 @@ const Blog = () => {
   ];
 
     return (
-        <div className='w-full h-full'>
-        <div className=" overflow-x-hidden w-full   h-screen">
+        <div className='w-full h-full  '>
+        <div className=" overflow-x-hidden w-full h-screen">
     {/* Background Image */}
     <img 
       src={Haircont}
@@ -220,36 +237,19 @@ const Blog = () => {
 
                  </div>
 
-                   {/*   img of final page */}
-             
-           <div className="relative mt-15   ml-12  border-radius w-full max-w-lg mx-auto group">
-             
-             <div className="flex space-x-4">
-               <img
-                 src={f1}
-                 alt="img1"
-                 className="w-70"
-               />
-               <img
-                 src={f2}
-                 alt="img2"
-                 className="w-70"
-               />
-               <img
-                 src={f3}
-                 alt="img3"
-                 className="w-70"
-               />
-                <img
-                 src={f4}
-                 alt="img3"
-                 className="w-70"
-               />
-             </div>
-             </div>
+                 <div className="space-x-2 ml-7 mt-15">
+      <Swiper spaceBetween={15} slidesPerView={4} loop={true} autoplay={{ delay: 1 }}>
+        {images.map((img, index) => (
+          <SwiperSlide key={index}>
+            <div className="space-x-2">
+              <img src={img} alt={`Slide ${index + 1}`} className="w-70" />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
      
-     
-          {/*   download  phone page */}
+       {/*   download  phone page */}
 
           <div className='w-full h-full flex'>
             <div className='flex flex-col ml-13 mt-25'>
@@ -275,9 +275,69 @@ const Blog = () => {
           </div>
 
              {/*   desc and pic   phone page */}
-             <div >
+           <div className='mt-40  py-0 px-0 -ml-30   bg-[#F8F8FA] w-[1600px] h-[700px] '>
+            <div className='flex  ml-30'>
+            <div className='flex  space-x-4  mt-5  '>
+              <div className='mt-55  ml-20'>
+                <img src={dg1} className='w-[225px] h-[231px] ' />
+              </div>
+              
+              <div className='flex flex-col   w-[600px] mt-20 space-y-5 h-[400px]'>
+              <div>
+                <img src={db1} className='w-[260px] h-[230px]'  />
+              </div>
+              <div>
+                <img src={dg2} className='w-[230px] h-[230px]' />
+              </div>
+
+              </div>
+
+            </div>
+               
+            <div className='flex flex-col mt-60  -ml-65'>
+              <p className='font-bold text-[30px] font-[Brandon]   text-[#000000] '>Quick & Easy</p>
+              <p className='font-sans text-[15px] text-[#010101]'>1000s of Salons Coming Onboard</p>
+              <p  className='font-sans text-[13px]  w-[490px] text-[#000000]'>simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book. </p>
+              <button className=" text-[#010101]  w-25 h-8 mt-4 mb-1 border border-[#EE2478]">Get the App</button>
+              <div className='w-[330px] h-[39px] flex mt-5 space-x-20' >
+             <div className='flex space-x-1 '>
+         
+            <div className='text-[#000000] space-x-2 '><Headphones size={20} /></div>
+           <p className='text-[#0C0C0C] font-bold   font-[Brandon] text-[12px]'>Customer Help Centre</p>
+           </div>
+          <div className='flex space-x-1  '>
+          <div className='text-[#000000] '><MessageCircleMore size={20} /></div> 
+         <p className='   text-[#0C0C0C]  font-bold  font-[Brandon] text-[12px]'>Chat support</p>
+        </div>
+        </div>
+
+            </div>
+
+            </div>
+
+
+
+
 
              </div>
+
+             <div className='flex flex-col w-[120px]  shadow-md items-center h-[120px] ml-50 mt-65  bg-[#FFFFFF] border border-[#ED2D77] rounded-full'>
+              <span className='font-bold text-[25px] mt-6 font-[Montserrat] text-[#000000]'>+20k</span>
+              <p  className=' text-[12px] font-[Montserrat] text-[#000000]'>Partner Onboard</p>
+            </div>
+
+            
+
+
+           
+
+           
+
+
+
+   
 
              
 

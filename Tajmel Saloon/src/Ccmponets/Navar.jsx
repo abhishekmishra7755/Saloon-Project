@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <ul className="flex w-[800px] h-[44px] font-[Sans-Serif] ml-25 space-x-6 text-[#0E0E0E] 
            font-[18px]">
-        <li><a href="/">Hair</a></li>
+        <li><a href="/hair">Hair</a></li>
         <li><a href="/aboutus">About Us</a></li>
         <li><a href="/hairremoval">Hair Removal</a></li>
         <li><a href="/massage">Massage</a></li>

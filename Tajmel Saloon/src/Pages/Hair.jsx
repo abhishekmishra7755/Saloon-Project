@@ -129,7 +129,7 @@ hair salons</span></div>
         
         <div className="flex flex-row  space-x-4">
         <div className="flex flex-col     w-100  h-30 focus:outline-none items-start space-y-2 mt-4">
-          <p className=" ml-3  mt-3 font-bold">Deep Tissue Massage </p>
+          <p className=" ml-3    hover:text-[#EE2478]  mt-3 font-bold">Deep Tissue Massage </p>
           <div className="flex  ml-3 w-90 items-center">
            <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
              to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -139,11 +139,11 @@ hair salons</span></div>
           </div>
           
            
-          <button className=" underline ml-3 font-bold  text-black">Read More</button>
+          <button className=" underline ml-3 font-bold  hover:text-[#EE2478] cursor-pointer  text-black">Read More</button>
         </div>
     
          <div className="flex flex-col w-100    focus:outline-none items-start space-y-2 mt-4">
-          <p className="  ml-3 mt-3 font-bold">Swedish Massage</p>
+          <p className="  ml-3 mt-3  hover:text-[#EE2478]  font-bold">Swedish Massage</p>
           <div className="flex  ml-3 w-90 items-center">
            <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                                             to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -151,10 +151,10 @@ hair salons</span></div>
                                                 repetition, injected humour.</p>
           
           </div>
-          <button className="underline ml-3 font-bold  text-black">Read More</button>
+          <button className="underline ml-3   hover:text-[#EE2478] cursor-pointer font-bold  text-black">Read More</button>
         </div>
         <div className="flex flex-col     w-100 focus:outline-none items-start space-y-2 mt-4">
-          <p className="  ml-3 mt-3 font-bold">Turkish Bath</p>
+          <p className="  ml-3    hover:text-[#EE2478]  mt-3 font-bold">Turkish Bath</p>
           <div className="flex  ml-3 w-90 items-center">
            <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                                             to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -164,7 +164,7 @@ hair salons</span></div>
           </div>
         
          
-          <button className="underline ml-3 font-bold  text-black">Read More</button>
+          <button className="underline  hover:text-[#EE2478] cursor-pointer  ml-3 font-bold  text-black">Read More</button>
 
         </div>
        
@@ -199,7 +199,7 @@ hair salons</span></div>
         
         <div className="flex flex-row  space-x-4">
         <div className="flex flex-col     w-100  h-30 focus:outline-none items-start space-y-2 mt-4">
-          <p className=" ml-3  mt-3 font-bold">Therapeutic Massage</p>
+          <p className=" ml-3   hover:text-[#EE2478]  mt-3 font-bold">Therapeutic Massage</p>
           <div className="flex  ml-3 w-90 items-center">
            <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
              to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -209,11 +209,11 @@ hair salons</span></div>
           </div>
           
            
-          <button className=" underline ml-3 font-bold  text-black">Read More</button>
+          <button className=" underline ml-3 font-bold   hover:text-[#EE2478] cursor-pointer text-black">Read More</button>
         </div>
     
    <div className="flex flex-col w-100    focus:outline-none items-start space-y-2 mt-4">
-          <p className="  ml-3 mt-3 font-bold">Thai Massage</p>
+          <p className="  ml-3 mt-3   hover:text-[#EE2478]  font-bold">Thai Massage</p>
           <div className="flex  ml-3 w-90 items-center">
            <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                                             to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -223,10 +223,10 @@ hair salons</span></div>
           </div>
        
  
-          <button className="underline ml-3 font-bold  text-black">Read More</button>
+          <button className="underline ml-3 font-bold   hover:text-[#EE2478] cursor-pointer text-black">Read More</button>
         </div>
         <div className="flex flex-col     w-100 focus:outline-none items-start space-y-2 mt-4">
-          <p className="  ml-3 mt-3 font-bold">Aromatherapy Massage</p>
+          <p className="  ml-3 mt-3  hover:text-[#EE2478]   font-bold">Aromatherapy Massage</p>
           <div className="flex  ml-3 w-90 items-center">
            <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                                             to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -236,7 +236,7 @@ hair salons</span></div>
           </div>
         
          
-          <button className="underline ml-3 font-bold  text-black">Read More</button>
+          <button className="underline ml-3 font-bold  hover:text-[#EE2478] cursor-pointer text-black">Read More</button>
 
         </div>
        
@@ -263,7 +263,7 @@ hair salons</span></div>
         
         <div className="flex flex-row  space-x-4">
         <div className="flex flex-col     w-100  h-30 focus:outline-none items-start space-y-2 mt-4">
-          <p className=" ml-3  mt-3 font-bold">Sports Massage </p>
+          <p className=" ml-3   hover:text-[#EE2478]    mt-3 font-bold">Sports Massage </p>
           <div className="flex  ml-3 w-90 items-center">
            <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
              to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -273,7 +273,7 @@ hair salons</span></div>
           </div>
           
            
-          <button className=" underline ml-3 font-bold  text-black">Read More</button>
+          <button className=" underline ml-3 font-bold hover:text-[#EE2478] cursor-pointer text-black">Read More</button>
         </div>
     
   
@@ -438,7 +438,7 @@ hair salons</span></div>
         
         <div className="flex flex-row  space-x-4">
         <div className="flex flex-col     w-100  h-30 focus:outline-none items-start space-y-2 mt-4">
-          <p className=" ml-3  mt-3 font-bold">Body</p>
+          <p className=" ml-3  hover:text-[#EE2478]   mt-3 font-bold">Body</p>
           <div className="flex  ml-3 w-90 items-center">
            <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
              to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -448,11 +448,11 @@ hair salons</span></div>
           </div>
           
            
-          <button className=" underline ml-3 font-bold  text-black">Read More</button>
+          <button className=" underline ml-3 font-bold hover:text-[#EE2478] cursor-pointer text-black">Read More</button>
         </div>
     
    <div className="flex flex-col w-100    focus:outline-none items-start space-y-2 mt-4">
-          <p className="  ml-3 mt-3 font-bold">Face</p>
+          <p className="  ml-3   hover:text-[#EE2478]   mt-3 font-bold">Face</p>
           <div className="flex  ml-3 w-90 items-center">
            <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                                             to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -465,7 +465,7 @@ hair salons</span></div>
           <button className="underline ml-3 font-bold  text-black">Read More</button>
         </div>
         <div className="flex flex-col     w-100 focus:outline-none items-start space-y-2 mt-4">
-          <p className="  ml-3 mt-3 font-bold">Dental</p>
+          <p className="  ml-3 mt-3   hover:text-[#EE2478]  font-bold">Dental</p>
           <div className="flex  ml-3 w-90 items-center">
            <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                                             to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -473,9 +473,7 @@ hair salons</span></div>
                                                 repetition, injected humour.</p>
           
           </div>
-        
-         
-          <button className="underline ml-3 font-bold  text-black">Read More</button>
+          <button className="underline ml-3 font-bold hover:text-[#EE2478] cursor-pointer text-black">Read More</button>
 
         </div>
        
@@ -509,7 +507,7 @@ hair salons</span></div>
         
         <div className="flex flex-row  space-x-4">
         <div className="flex flex-col     w-100  h-30 focus:outline-none items-start space-y-2 mt-4">
-          <p className=" ml-3  mt-3 font-bold">Therapeutic Massage</p>
+          <p className=" ml-3  mt-3  hover:text-[#EE2478]  font-bold">Therapeutic Massage</p>
           <div className="flex  ml-3 w-90 items-center">
            <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
              to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -519,11 +517,11 @@ hair salons</span></div>
           </div>
           
            
-          <button className=" underline ml-3 font-bold  text-black">Read More</button>
+          <button className=" underline ml-3  hover:text-[#EE2478] cursor-pointer font-bold  text-black">Read More</button>
         </div>
     
    <div className="flex flex-col w-100    focus:outline-none items-start space-y-2 mt-4">
-          <p className="  ml-3 mt-3 font-bold">Thai Massage</p>
+          <p className="  ml-3 mt-3   hover:text-[#EE2478]  font-bold">Thai Massage</p>
           <div className="flex  ml-3 w-90 items-center">
            <p className='font-sans text-[15px]'>combined with a handful of model sentence structures,
                                             to  generate  Lorem  Ipsum  which  looks  reasonable.  The
@@ -533,7 +531,7 @@ hair salons</span></div>
           </div>
        
  
-          <button className="underline ml-3 font-bold  text-black">Read More</button>
+          <button className="underline ml-3  hover:text-[#EE2478] cursor-pointer font-bold  text-black">Read More</button>
         </div>
         
         </div>
