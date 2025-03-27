@@ -25,6 +25,18 @@ const [showPassword, setShowPassword] = useState(false);
     console.log("Password Submitted:", data.password);
   };
 
+  const handleFacebookLogin = () => {
+    window.location.href =
+      "https://www.facebook.com/v17.0/dialog/oauth?client_id=YOUR_FACEBOOK_APP_ID&redirect_uri=http://localhost:3000/dashboard&scope=email,public_profile";
+  };
+
+  const handleGoogleLogin = () => {
+    const googleClientId = "1234567890-abcdefghijklmnopqrstuvwxyz.apps.googleusercontent.com";
+    const googleAuthUrl = `https://accounts.google.com/o/oauth2/auth?client_id=${googleClientId}&redirect_uri=${window.location.origin}&response_type=token&scope=email%20profile`;
+
+    window.location.href = googleAuthUrl; // Redirect to Google login page
+  };
+
 
   useEffect(() => {
     const isAuthenticated = true; // Replace this with real auth check
@@ -54,12 +66,16 @@ const [showPassword, setShowPassword] = useState(false);
           <h1 className="text-xl  -ml-77  font-bold mt-8">Tajmeel for Customers</h1>
           <p className=" text-[#000000]  font-sans -ml-8 p-3 mb-2">Create an account or log in to book and manage your appointments</p>
   
-          <button className="w-full flex border  font-sans  rounded-b-sm   cursor-pointer  items-center text-[#000000]  border-[#C2C2C2] justify-center  py-2  mb-4 hover:bg-gray-100 transition">
+          <button 
+          onClick={handleFacebookLogin}
+          className="w-full flex border  font-sans  rounded-b-sm   cursor-pointer  items-center text-[#000000]  border-[#C2C2C2] justify-center  py-2  mb-4 hover:bg-gray-100 transition">
          {/*   <FcGoogle className="mr-2 " /> Continue with Google */}
            <div> <img src={fa1}  className='-ml-2' /></div>
            Continue with Facebook
           </button>
-          <button className="w-full flex border  font-sans  rounded-b-sm   cursor-pointer  items-center text-[#000000]  border-[#C2C2C2] justify-center  py-2  mb-4 hover:bg-gray-100 transition">
+          <button 
+          onClick={handleGoogleLogin}
+          className="w-full flex border  font-sans  rounded-b-sm   cursor-pointer  items-center text-[#000000]  border-[#C2C2C2] justify-center  py-2  mb-4 hover:bg-gray-100 transition">
          {/*   <FcGoogle className="mr-2 " /> Continue with Google */}
            <div> <img src={ga}  className='-ml-2' /></div>
            Continue with Google

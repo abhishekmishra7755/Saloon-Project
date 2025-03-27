@@ -25,9 +25,17 @@ const Professional = () => {
       };
 
       const handleFacebookLogin = () => {
-        window.open("http://localhost:5000/auth/facebook", "_self");
+        window.location.href =
+          "https://www.facebook.com/v17.0/dialog/oauth?client_id=YOUR_FACEBOOK_APP_ID&redirect_uri=http://localhost:3000/dashboard&scope=email,public_profile";
       };
+     
+
+      const handleGoogleLogin = () => {
+        const googleClientId = "1234567890-abcdefghijklmnopqrstuvwxyz.apps.googleusercontent.com";
+        const googleAuthUrl = `https://accounts.google.com/o/oauth2/auth?client_id=${googleClientId}&redirect_uri=${window.location.origin}&response_type=token&scope=email%20profile`;
     
+        window.location.href = googleAuthUrl; // Redirect to Google login page
+      };
 
   useEffect(() => {
     const isAuthenticated = true; // Replace this with real auth check
@@ -114,12 +122,14 @@ const handleSign = () => {
         </div> 
 
 
-        <button className="w-full flex items-center justify-center gap-2 cursor-pointer  hover:bg-gray-100  border border-[#C2C2C2]  text-[#000000] py-2 rounded-b-sm mb-4   transition">
+        <button
+          onClick={handleFacebookLogin}
+         className="w-full flex items-center justify-center gap-2 cursor-pointer  hover:bg-gray-100  border border-[#C2C2C2]  text-[#000000] py-2 rounded-b-sm mb-4   transition">
         <div> <img src={fa1}  className='space-y-5' /></div>
          Continue with Facebook 
         </button>
         <button
-         onClick={handleFacebookLogin}
+        onClick={handleGoogleLogin}
          className="w-full flex border  font-sans  cursor-pointer   rounded-b-sm items-center text-[#000000]  border-[#C2C2C2] justify-center  py-2  mb-4 hover:bg-gray-100 transition">
           <div> <img src={ga}  className='-ml-2' /></div>
           Continue with Google
