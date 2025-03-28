@@ -48,6 +48,11 @@ import ld15 from '../assets/img/ld15.jpg'
 import ld16 from '../assets/img/ld16.jpg'
 import ld17 from '../assets/img/ld17.jpg'
 import ld18 from '../assets/img/ld18.jpg'
+import Select from 'react-select';
+import { useForm, Controller } from 'react-hook-form';
+
+
+
 
 
 
@@ -55,6 +60,39 @@ import ld18 from '../assets/img/ld18.jpg'
 const images = [f1, f2, f3, f4, f1, f3, f2];
 
 const Final = () => {
+  const { register, handleSubmit, control } = useForm();  
+  const [submittedData, setSubmittedData] = useState(null);
+  const [activeTab, setActiveTab] = useState('Saloon');
+  const [loading, setLoading] = useState(false);  // Loading state
+
+  // Multi-select options for postcode
+  const postcodeOptions = [
+    { value: '1001', label: '1001' },
+    { value: '1002', label: '1002' },
+    { value: '1003', label: '1003' },
+    { value: '1004', label: '1004' },
+  ];
+
+  const onSubmit = async (data) => {
+    setLoading(true);  // Start loading
+
+    // Simulate a delay (e.g., processing time)
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    // Format data before storing
+    const formattedData = {
+      ...data,
+      postcode: data.postcode ? data.postcode.map((p) => p.value) : [],
+      type: activeTab,
+    };
+
+    // Store data locally
+    setSubmittedData(formattedData);
+    console.log('Form Submitted:', formattedData);
+
+    setLoading(false);  // Stop loading
+  };
+
 
   const navigate = useNavigate();
 
@@ -183,42 +221,61 @@ const Final = () => {
 
         <h1 className="font-bold text-[#000000] ml-2">Saloon</h1>
       </div>
-      <div className="w-20 border-t-2 p-4 border-[#ED2D77] hover:to-blue-600 "></div>
+      <div className="w-20 border-t-2 p-4 border-[#ED2D77] hover:to-blue-600"></div>
 
-        <form className="mb-10 w-[300px] h-[200px]">
+        <form 
+           onSubmit={handleSubmit(onSubmit)} 
+         className="mb-10 w-[300px] h-[200px]">
+
+           {/* Treatment Input */}
           <div className="mb-3 relative">
           <SearchIcon className="absolute left-3 top-3 text-gray-400" size={20} />
 
             <input
-              type="text"
-              placeholder="Search for Treatment"
+              {...register('treatment')}
+                type="text"
+              placeholder="Search For Treatment"
+              name="treatment"
               className="w-full pl-10 p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
 
-          <div className="mb-3 relative  ">
+              {/* Multi-Select Dropdown for Postcode */}
+
+             <div className="mb-3 relative  ">
             <MapPin className="absolute left-3 top-3  text-gray-400" size={20} />
-            <input
-              type="text"
-              placeholder="Enter Postcode or Area"
-              className="w-full pl-10 p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
+               <Controller
+                className="w-full pl-10 p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+               name="postcode"
+               control={control}
+               render={({ field }) => (
+                 <Select
+                   {...field}
+                   options={postcodeOptions}
+                   isMulti
+                   placeholder="Enter Postcode or Area "
+                  
+                 />
+               )}
+              />
           </div>
+              {/* Date Input */}
 
           <div className="mb-3 relative">
           <MapPin className="absolute left-3 top-3 text-gray-400" size={20} />
             <input
-              type="text"
-              placeholder="Any Date"
+              name="date"
+              {...register('date')}
+                  type="date"
               className="w-full pl-10 p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
-
+             {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-[#ED2D77] text-white p-3 rounded font-medium  transition"
+            className="w-full    hover:bg-black bg-[#ED2D77] text-white p-3 rounded font-medium  transition disabled={loading"
           >
-            Search
+         {loading ? 'Submitting...' : 'Submit'}
           </button>
         </form>
       </div>
@@ -231,8 +288,8 @@ const Final = () => {
   <p className='font-bold text-[#000000]  ml-100  -mt-30  text-[30px] font-[Brandon]'>
   The brighter way to book beauty
   </p>
-  <p className='text-[#010101] font-sans  ml-64 w-[690px] text-[15px] '>quis nostrud exerci tation ullamcorper suscipit lobor nisl ut aliquip ex ea commodo  consequat. Duis aute</p>
-  <p className='text-[#010101] font-sans  ml-125 w-[690px] text-[15px] '>vel eum  iriure dolor in  hendrerit in.</p>
+  <p className='text-[#010101] font-sans  ml-64 w-[690px] text-[15px]'>quis nostrud exerci tation ullamcorper suscipit lobor nisl ut aliquip ex ea commodo  consequat. Duis aute</p>
+  <p className='text-[#010101] font-sans  ml-125 w-[690px] text-[15px]'>vel eum  iriure dolor in  hendrerit in.</p>
 
 
   {/*  The brighter way to book beauty page */}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Home, User, Settings, LogOut, BarChart2 } from "lucide-react";
+import contactpic from '../assets/img/contactpic.png'
 
 export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -44,14 +45,14 @@ export default function Dashboard() {
           </button>
           <h2 className="text-lg font-semibold text-gray-700">Dashboard</h2>
           <div className="flex items-center space-x-3">
-            <img src="https://via.placeholder.com/40" alt="Profile" className="w-10 h-10 rounded-full" />
-            <span className="text-gray-700 font-medium">John Doe</span>
+            <img src={contactpic} alt="Profile" className="w-10 h-10 rounded-full" />
+            <span className="text-gray-700 font-medium">Abhishek Mishra</span>
           </div>
         </header>
 
         {/* Content Area */}
         <main className="p-6">
-          <h1 className="text-2xl font-bold text-gray-700">Welcome Back, John!</h1>
+          <h1 className="text-2xl font-bold text-gray-700">Welcome Back,Mintorn!</h1>
           <p className="text-gray-500 mt-1">Here's an overview of your recent activity.</p>
 
           {/* Stats Section */}
