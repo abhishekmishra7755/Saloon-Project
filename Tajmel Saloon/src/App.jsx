@@ -33,6 +33,7 @@ import Dashboard1 from './Pages/Dashboard1';
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Navigate } from 'react-router-dom';
+import Logout from './Pages/Logout'
 
 
 
@@ -66,6 +67,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/logout" element={<Logout />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/signup1" element={<SignUp1 />} />
             <Route path="/service" element={<Service />} />

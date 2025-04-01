@@ -20,9 +20,7 @@ const Professional = () => {
     const [showPassword, setShowPassword] = useState(false);
       const { register, handleSubmit, formState: { errors } } = useForm();
     
-      const onSubmit = (data) => {
-        console.log("Password Submitted:", data.password);
-      };
+     
 
       const handleFacebookLogin = () => {
         window.location.href =
@@ -35,6 +33,29 @@ const Professional = () => {
         const googleAuthUrl = `https://accounts.google.com/o/oauth2/auth?client_id=${googleClientId}&redirect_uri=${window.location.origin}&response_type=token&scope=email%20profile`;
     
         window.location.href = googleAuthUrl; // Redirect to Google login page
+      };
+      const [successMessage, setSuccessMessage] = useState('');
+
+  
+
+      const onSubmit = (data) => {
+        const { email, password } = data;
+    
+        // Simulated authentication
+        if (email === 'user@example.com' && password === 'password123') {
+          localStorage.setItem('authToken', 'sample_token');
+          
+          // Show success popup
+          setSuccessMessage('Successfully Logged In!');
+          
+          // Redirect to Dashboard after 2 seconds
+          setTimeout(() => {
+            setSuccessMessage('');
+            navigate('/dashboard');
+          }, 2000);
+        } else {
+          alert('Invalid email or password.');
+        }
       };
 
   useEffect(() => {
@@ -66,7 +87,7 @@ const handleSign = () => {
           <ArrowLeft className="" /> 
         </button>
         <h1 className="text-xl  -ml-77   font-bold mt-5">Tajmeel for Professional</h1>
-        <p className=" text-[#000000]  font-sans -ml-35 p-3 mb-2">Create an account or log in to manage your business.
+        <p className=" text-[#000000]  font-sans -ml-35 p-3 mb-2">Create an account or log in to      manage your business.
         </p>
         <form onSubmit={handleSubmit(onSubmit)} className="w-full h-full  bg-white">
         <div>

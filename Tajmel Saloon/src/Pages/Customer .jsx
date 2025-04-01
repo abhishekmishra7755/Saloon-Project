@@ -16,14 +16,14 @@ import ga from '../assets/img/ga.png'
 
 
 
+
+
 const Coustomer = () => {
 const navigate = useNavigate();
 const [showPassword, setShowPassword] = useState(false);
   const { register, handleSubmit, formState: { errors } } = useForm();
 
-  const onSubmit = (data) => {
-    console.log("Password Submitted:", data.password);
-  };
+ 
 
   const handleFacebookLogin = () => {
     window.location.href =
@@ -37,6 +37,29 @@ const [showPassword, setShowPassword] = useState(false);
     window.location.href = googleAuthUrl; // Redirect to Google login page
   };
 
+  const [successMessage, setSuccessMessage] = useState('');
+
+  
+
+  const onSubmit = (data) => {
+    const { email, password } = data;
+
+    // Simulated authentication
+    if (email === 'user@example.com' && password === 'password123') {
+      localStorage.setItem('authToken', 'sample_token');
+      
+      // Show success popup
+      setSuccessMessage('Successfully Logged In!');
+      
+      // Redirect to Dashboard after 2 seconds
+      setTimeout(() => {
+        setSuccessMessage('');
+        navigate('/dashboard');
+      }, 2000);
+    } else {
+      alert('Invalid email or password.');
+    }
+  };
 
   useEffect(() => {
     const isAuthenticated = true; // Replace this with real auth check

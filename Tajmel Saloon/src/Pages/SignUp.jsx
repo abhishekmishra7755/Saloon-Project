@@ -36,14 +36,14 @@ const SignUp= () => {
     setLoading(false); // Hide loader
     alert("Signup Successful!");
     reset(); // Clear form after submission
-    navigate("/Dashboard");
+    navigate("/");
   };
     
 
   useEffect(() => {
     const isAuthenticated = true; // Replace this with real auth check
     if (!isAuthenticated) {
-      navigate("/Final");
+      navigate("/");
     }
   }, [navigate]);
 
