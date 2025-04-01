@@ -93,7 +93,7 @@ function App() {
     </div>
 
     {/* Footer or second Navbar */}
-    <div className='ml-20 mt-15'>
+    <div className='ml-20 mt-15 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 '>
           <Footer/>
         </div>
 </div>

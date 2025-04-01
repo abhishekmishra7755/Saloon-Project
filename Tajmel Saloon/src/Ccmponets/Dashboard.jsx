@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import dg2 from '../assets/img/dg2.png'; // Replace with actual image import
 
 const Dashboard = () => {
   const navigate = useNavigate();
+// Removed unused onhandle function
 
   // Dummy user data (Replace with actual user data)
   const user = {
-    name: 'John Doe',
-    image: 'https://via.placeholder.com/100', // Replace with real image URL
+    name: 'abhi',
+    image: dg2 // Replace with real image URL
   };
 
   const [activeTab, setActiveTab] = useState('profile');
@@ -27,20 +29,21 @@ const Dashboard = () => {
         </div>
         <nav className="mt-6 space-y-2">
           <button
-            className={`w-full text-left p-2 rounded ${activeTab === 'profile' ? 'bg-blue-500 text-white' : 'text-gray-700'}`}
+            className={`w-full text-left   cursor-pointer   p-2 rounded ${activeTab === 'profile' ? 'bg-blue-500 text-white' : 'text-gray-700'}`}
             onClick={() => setActiveTab('profile')}
           >
             My Profile
           </button>
           <button
-            className={`w-full text-left p-2 rounded ${activeTab === 'bookings' ? 'bg-blue-500 text-white' : 'text-gray-700'}`}
+            className={`w-full text-left  cursor-pointer  p-2 rounded ${activeTab === 'bookings' ? 'bg-blue-500 text-white' : 'text-gray-700'}`}
             onClick={() => setActiveTab('bookings')}
           >
             My Bookings
           </button>
           <button
-            className={`w-full text-left p-2 rounded ${activeTab === 'password' ? 'bg-blue-500 text-white' : 'text-gray-700'}`}
+            className={`w-full text-left  cursor-pointer p-2 rounded ${activeTab === 'password' ? 'bg-blue-500 text-white' : 'text-gray-700'}`}
             onClick={() => setActiveTab('password')}
+         
           >
             Change Password
           </button>
@@ -70,12 +73,7 @@ const Profile = () => (
   </div>
 );
 
-const MyBookings = () => (
-  <div className="bg-white p-6 rounded-lg shadow-md">
-    <h2 className="text-2xl font-bold">My Bookings</h2>
-    <p className="mt-2 text-gray-600">This is where your bookings will appear.</p>
-  </div>
-);
+
 
 const ChangePassword = () => (
   <div className="bg-white p-6 rounded-lg shadow-md">
