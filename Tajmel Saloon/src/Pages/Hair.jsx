@@ -12,8 +12,7 @@ import massag7 from '../assets/img/massag7.png'
 import m1 from '../assets/img/m1.png'
 import m2 from '../assets/img/m2.png'
 import m3 from '../assets/img/m3.png'
-import m4 from '../assets/img/m4.png'
-import m5 from '../assets/img/m5.png'
+
 
 
 
@@ -21,8 +20,8 @@ import m5 from '../assets/img/m5.png'
 const Hair = () => {
     return (
        
-      <div className='w-full h-full'>
-      <div className=" overflow-x-hidden w-full   h-screen">
+      <div className='w-full   h-full'>
+      <div className=" overflow-x-hidden w-full  h-screen">
   {/* Background Image */}
   <img 
     src={Haircont}
@@ -32,8 +31,8 @@ const Hair = () => {
 
    {/* middle Text */}
  
- <div className="flex mt-50 items-center">
-<div className="relative  ml-100 h-28 w-1">
+   <div className="flex mt-50 items-center">
+   <div className="relative  ml-100 h-28 w-1">
   <div className=" top-20 h-1/2 w-full bg-pink-500" style={{ backgroundColor: '#ED2D77' }}></div>
   <div className="top-20 h-1/2 w-full bg-black"></div>
 </div>
@@ -399,9 +398,6 @@ hair salons</span></div>
               </p>
             </div>
           </div>
-
-
-
             {/*  img   massage description 2*/}
 
             <div>

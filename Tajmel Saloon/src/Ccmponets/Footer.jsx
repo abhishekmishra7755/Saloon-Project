@@ -7,7 +7,7 @@ import { SearchIcon, MapPin, Calendar, FacebookIcon,InstagramIcon,LinkedinIcon,T
 
 const Footer = () => {
     return (
-      <footer className=" bottom-0 w-full bg-white bg-opacity-80 ">
+      <footer className=" bottom-0 w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white bg-opacity-80 ">
          <div id='footer1' className=' space-x-4 -ml-20  rounded-br-[80%] w-full mt-25 '>
        <div id='descreption' className='mt-15'>
          <p id='des1' className='w-100  ml-7'>quis nostrud exerci tation ullamcorper suscipit lobor
@@ -28,12 +28,12 @@ const Footer = () => {
 
       
 
-        <div className="flex space-x-25 text-center  mt-8  font-sans">
+        <div className="space-x-25 text-center  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8  font-sans">
             <div > 
              <span className="text-xl font-bold  text-[#ED2D77] ">Company</span>
             <p className=" mt-3 -ml-5 font-normal font-sans text-[#000000]">About Us </p>
             <p className=" mt-3 ml-15 font-normal font-sans text-[#000000]">Terms and Conditions </p>
-            <p className=" mt-3 ml-18 font-normal  font-sans text-[#000000]">Cancellation/Refund Policy </p>
+            <p className=" mt-3 ml-10 font-normal  font-sans text-[#000000]">Cancellation/Refund  </p>
             <p className=" mt-3 -ml-5  font-normal font-sans text-[#000000]">Privacy Policy </p>
             <p className=" mt-3 -ml-5  font-normal font-sans text-[#000000]">Content Policy </p>
             <p  className=" mt-3 -ml-5 font-normal font-sans text-[#000000]">We are Hiring</p>

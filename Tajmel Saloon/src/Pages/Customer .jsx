@@ -21,9 +21,7 @@ import ga from '../assets/img/ga.png'
 const Coustomer = () => {
 const navigate = useNavigate();
 const [showPassword, setShowPassword] = useState(false);
-  const { register, handleSubmit, formState: { errors } } = useForm();
-
- 
+const { register, handleSubmit, formState: { errors } } = useForm();
 
   const handleFacebookLogin = () => {
     window.location.href =
@@ -36,16 +34,17 @@ const [showPassword, setShowPassword] = useState(false);
 
     window.location.href = googleAuthUrl; // Redirect to Google login page
   };
+   
+  const [SuccessMessage, setSuccessMessage] = useState(""); // Declared but not used
 
-  const [successMessage, setSuccessMessage] = useState('');
-
-  
-
+ 
+   
+ 
   const onSubmit = (data) => {
     const { email, password } = data;
 
     // Simulated authentication
-    if (email === 'user@example.com' && password === 'password123') {
+    if (email === 'xyz@123.com' && password === 'abhi123') {
       localStorage.setItem('authToken', 'sample_token');
       
       // Show success popup
@@ -60,6 +59,7 @@ const [showPassword, setShowPassword] = useState(false);
       alert('Invalid email or password.');
     }
   };
+
 
   useEffect(() => {
     const isAuthenticated = true; // Replace this with real auth check
@@ -164,6 +164,8 @@ const [showPassword, setShowPassword] = useState(false);
               Continue
             </button>
             </div>
+            {SuccessMessage && <p className="text-green-500">{SuccessMessage}</p>}
+            {/* Your form goes here */}
           </form>
   
           <p className="mt-6   flex-col text-[#000000]">

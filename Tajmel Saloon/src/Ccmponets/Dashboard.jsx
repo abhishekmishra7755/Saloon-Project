@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import dg2 from '../assets/img/dg2.png'; // Replace with actual image import
+import MyProfile from '../Pages/MyProfile';
 
 const Dashboard = () => {
   const navigate = useNavigate();
-// Removed unused onhandle function
+
 
   // Dummy user data (Replace with actual user data)
   const user = {
@@ -29,20 +30,20 @@ const Dashboard = () => {
         </div>
         <nav className="mt-6 space-y-2">
           <button
-            className={`w-full text-left   cursor-pointer   p-2 rounded ${activeTab === 'profile' ? 'bg-blue-500 text-white' : 'text-gray-700'}`}
-            onClick={() => setActiveTab('profile')}
+            className={`w-full text-left   cursor-pointer   p-2 rounded ${activeTab === 'myprofile' ? 'bg-blue-500 text-white' : 'text-gray-700'}`}
+            onClick={() => setActiveTab('MyProfile')}
           >
             My Profile
           </button>
           <button
             className={`w-full text-left  cursor-pointer  p-2 rounded ${activeTab === 'bookings' ? 'bg-blue-500 text-white' : 'text-gray-700'}`}
-            onClick={() => setActiveTab('bookings')}
+            onClick={() => setActiveTab('Bookings')}
           >
             My Bookings
           </button>
           <button
-            className={`w-full text-left  cursor-pointer p-2 rounded ${activeTab === 'password' ? 'bg-blue-500 text-white' : 'text-gray-700'}`}
-            onClick={() => setActiveTab('password')}
+            className={`w-full text-left  cursor-pointer p-2 rounded ${activeTab === 'changepassword' ? 'bg-blue-500 text-white' : 'text-gray-700'}`}
+            onClick={() => setActiveTab('ChangePassword ')}
          
           >
             Change Password
@@ -58,28 +59,11 @@ const Dashboard = () => {
 
       {/* Main Content */}
       <main className="flex-1 p-6">
-        {activeTab === 'profile' && <Profile />}
-        {activeTab === 'bookings' && <MyBookings />}
+        {activeTab === 'profile' && <MyProfile/>}
+        {activeTab === 'bookings' && <Bookings />}
         {activeTab === 'password' && <ChangePassword />}
       </main>
     </div>
   );
 };
-
-const Profile = () => (
-  <div className="bg-white p-6 rounded-lg shadow-md">
-    <h2 className="text-2xl font-bold">My Profile</h2>
-    <p className="mt-2 text-gray-600">This is your profile section.</p>
-  </div>
-);
-
-
-
-const ChangePassword = () => (
-  <div className="bg-white p-6 rounded-lg shadow-md">
-    <h2 className="text-2xl font-bold">Change Password</h2>
-    <p className="mt-2 text-gray-600">Update your password here.</p>
-  </div>
-);
-
 export default Dashboard;

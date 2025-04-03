@@ -289,22 +289,14 @@ const ContactUs = () => {
        <p className="font-bold text-[15px] left-20  -mt-1">Opening Hours</p>
         <p className='text-[#545454]  font-sans    text-[15px]'>Monday – Friday 09:00 – 23:00</p>
          <p className='text-[#545454]  font-sans  text-[15px]'> Saturday 09:00 – 22:00</p>
-       
        </div>
       </div>
     </div>
     </div>
-   
-        </div>
-
-      
-   
-
-      </div>
-      </>
+    </div>
+   </div>
+    </>
     );
-
-
 }
 
 export default ContactUs;

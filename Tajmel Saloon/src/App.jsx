@@ -34,6 +34,11 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Navigate } from 'react-router-dom';
 import Logout from './Pages/Logout'
+import ChangePassword from './Pages/ChangePassword';
+import Bookings from './Pages/Bookings';
+import MyProfile from './Pages/MyProfile';
+import ShoppingCart from './Pages/ShoppingCart';
+
 
 
 
@@ -87,6 +92,11 @@ function App() {
             <Route path='/listingdetails18' element= {<ListingDetails18/>}/>
             <Route path='/listingdetails19' element= {<ListingDetails19/>}/>
             <Route path="/dashboard" element={<Dashboard/>} />
+            <Route path="/myprofile" element={user ? <MyProfile /> : <Navigate to="/login" />} />
+            <Route path="/bookings" element={user ? <Bookings /> : <Navigate to="/login" />} />
+            <Route path="/changepassword" element={user ? <ChangePassword /> : <Navigate to="/login" />} />
+            <Route path="/shoppingcart" element={<ShoppingCart />} />
+            {/* Add more routes as needed */}
             <Route path="/dashboard1" element={user ? <Dashboard1 /> : <Navigate to="/login" />} />
             <Route path="/wishlist" element={< Wishlist />} />
         </Routes>

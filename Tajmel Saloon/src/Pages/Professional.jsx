@@ -18,10 +18,8 @@ import ga from '../assets/img/ga.png'
 const Professional = () => {
     const navigate = useNavigate();
     const [showPassword, setShowPassword] = useState(false);
-      const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     
-     
-
       const handleFacebookLogin = () => {
         window.location.href =
           "https://www.facebook.com/v17.0/dialog/oauth?client_id=YOUR_FACEBOOK_APP_ID&redirect_uri=http://localhost:3000/dashboard&scope=email,public_profile";
@@ -42,7 +40,7 @@ const Professional = () => {
         const { email, password } = data;
     
         // Simulated authentication
-        if (email === 'user@example.com' && password === 'password123') {
+        if (email ==='xyz@123.com' && password === 'abhi123') {
           localStorage.setItem('authToken', 'sample_token');
           
           // Show success popup
@@ -89,6 +87,11 @@ const handleSign = () => {
         <h1 className="text-xl  -ml-77   font-bold mt-5">Tajmeel for Professional</h1>
         <p className=" text-[#000000]  font-sans -ml-35 p-3 mb-2">Create an account or log in to      manage your business.
         </p>
+        {successMessage && (
+          <div className="text-green-500 text-center mb-4">
+            {successMessage}
+          </div>
+        )}
         <form onSubmit={handleSubmit(onSubmit)} className="w-full h-full  bg-white">
         <div>
         <input
