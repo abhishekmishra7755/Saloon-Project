@@ -47,12 +47,12 @@ const ContactUs = () => {
     return (
       <>
  
-            <div className=" overflow-x-hidden w-full h-screen">
+            <div className=" overflow-x-hidden w-full    h-screen  ">
         {/* Background Image */}
         <img 
           src={Haircont}
           alt="Background"
-            className="absolute  mt-10 max-w-[1920px] max-h-[539px]  inset-0 w-full h-full object-cover"
+            className="absolute mt-10 max-w-[1920px] max-h-[539px]  inset-0 w-full h-full object-cover"
         />
        
         {/* middle line Container */}

@@ -3,6 +3,7 @@ import nav from '../assets/img/nav.png'
 import { useState } from "react";
 import { IoMdContact } from "react-icons/io";
 import { FiMenu, FiX } from "react-icons/fi"; // For the menu toggle icons
+import { Link } from "react-router-dom";
 
 
 
@@ -13,8 +14,9 @@ const Navbar = () => {
     <nav className="max-w-[1530px] bg-white shadow-md  flex flex-col  h-[90px] p-5 font-[sans-serif]">
       <div className="flex justify-between -mt-8 items-center">
         {/* Logo */}
-        <div className="text-[#ED2D77]  ml-20">
-          <img src={nav} alt="Salon Logo" className="w-[200px] h-[100px]" />
+        <div className="text-[#ED2D77] cursor-pointer ml-20">
+        <Link to="/">   <img src={nav} alt="Salon Logo" className="w-[200px] h-[100px]" /> </Link>
+        
         </div>
 
         {/* Desktop Navigation */}
