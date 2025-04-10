@@ -57,7 +57,7 @@ import { useForm, Controller } from 'react-hook-form';
 
 
 
-const images = [f1, f2, f3, f4, f1, f3, f2];
+const images = [f1, f2, f3, f4, f1, f3, f2, f4, f1, f3, f2, f4];
 
 const Final = () => {
   const { register, handleSubmit, control } = useForm();  
@@ -377,7 +377,7 @@ const Final = () => {
       
       <div className="flex flex-row  space-x-4">
       <div className="flex flex-col  border border-[#D9D9D9]  w-70 focus:outline-none items-start space-y-2 mt-4">
-        <p className="  ml-4 mt-3  hover:text-[#ED2D77]  font-[Brandon]  text-[20px] font-bold">Deep Tissue Massage</p>
+        <p className="  ml-4 mt-3  hover:text-[#ED2D77] cursor-pointer font-[Brandon]  text-[20px] font-bold">Deep Tissue Massage</p>
         <div className="flex mt-3 ml-1 items-center">
           <span className=" -mt-3 ml-3 text-[17px] text-[#868686]">4.9</span>
           <FaStar className="text-black -mt-3  ml-1" />
@@ -385,11 +385,11 @@ const Final = () => {
         <p className="text-[#868686] mt-1  font-sans text-[20px]  w-[245px] ml-4">combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
         <button
          onClick={handleClick}
-         className=" text-black ml-3 w-30 h-8  hover:bg-[#ED2D77] active:bg-[#ED2D77]     cursor-pointer   mt-2 border border-[#ED2D77]">View Details</button>
+         className=" text-black ml-3 w-30 h-8  hover:bg-[#ED2D77] active:bg-[#ED2D77]     cursor-pointer     hover:text-white  mt-2 border border-[#ED2D77]">View Details</button>
       </div>
      {/* description 2*/}
      <div className="flex flex-col  border border-[#D9D9D9]   w-70 focus:outline-none items-start space-y-2 mt-4">
-        <p className="  ml-4 mt-3   text-[20px]  hover:text-[#ED2D77]  font-[Brandon]   font-bold">Swedish Massage</p>
+        <p className="  ml-4 mt-3   text-[20px]  cursor-pointer  hover:text-[#ED2D77]  font-[Brandon]   font-bold">Swedish Massage</p>
         <div className="flex mt-3 ml-1 items-center">
         <span className=" -mt-3 ml-3 text-[17px] text-[#868686]">4.9</span>
           <FaStar className="text-black -mt-3  ml-1" />
@@ -397,10 +397,10 @@ const Final = () => {
         <p className="text-[#868686] mt-1  font-sans text-[20px]  w-[245px] ml-4">combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
         <button 
          onClick={handleClick11}
-        className=" text-black ml-3 w-30 h-8 mt-2 hover:bg-[#ED2D77] active:bg-[#ED2D77]   cursor-pointer      mb-1 border border-[#ED2D77]">View Details</button>
+        className=" text-black ml-3 w-30 h-8 mt-2 hover:bg-[#ED2D77] active:bg-[#ED2D77]   cursor-pointer   hover:text-white    mb-1 border border-[#ED2D77]">View Details</button>
       </div>
       <div className="flex flex-col   border border-[#D9D9D9]  w-70 focus:outline-none items-start space-y-2 mt-4">
-        <p className="  ml-4 mt-3  hover:text-[#ED2D77]   text-[20px]   font-[Brandon]   font-bold">Therapeutic Massage</p>
+        <p className="  ml-4 mt-3  hover:text-[#ED2D77]  cursor-pointer   text-[20px]   font-[Brandon]   font-bold">Therapeutic Massage</p>
         <div className="flex mt-3 items-center">
         <span className=" -mt-3 ml-3 text-[17px] text-[#868686]">4.9</span>
           <FaStar className="text-black -mt-3  ml-1" />
@@ -408,10 +408,10 @@ const Final = () => {
         <p className="text-[#868686] mt-1  font-sans text-[20px]  w-[245px] ml-4">combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
         <button 
          onClick={handleClick12}
-        className=" text-black ml-3 w-30 h-8  hover:bg-[#ED2D77] active:bg-[#ED2D77]   cursor-pointer   mt-2  mb-1 border border-[#ED2D77]">View Details</button>
+        className=" text-black ml-3 w-30 h-8  hover:bg-[#ED2D77] active:bg-[#ED2D77]   cursor-pointer   mt-2  mb-1 border    hover:text-white  border-[#ED2D77]">View Details</button>
       </div>
       <div className="flex flex-col   border border-[#D9D9D9]  w-70 focus:outline-none items-start space-y-2 mt-4">
-        <p className="  ml-4 mt-3  hover:text-[#ED2D77]   font-[Brandon] text-[20px]  font-bold">Thai Massage</p>
+        <p className="  ml-4 mt-3  hover:text-[#ED2D77]   cursor-pointer  font-[Brandon] text-[20px]  font-bold">Thai Massage</p>
         <div className="flex mt-3 items-center">
         <span className=" -mt-3 ml-3 text-[17px] text-[#868686]">4.9</span>
           <FaStar className="text-black -mt-3  ml-1" />
@@ -419,7 +419,7 @@ const Final = () => {
         <p className="text-[#868686] mt-1   font-sans text-[20px]  w-[245px] ml-4">combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
         <button 
          onClick={handleClick13}
-        className=" text-black ml-3 w-30 h-8    cursor-pointer   mt-2 hover:bg-[#ED2D77] active:bg-[#ED2D77]  mb-1 border border-[#ED2D77]">View Details</button>
+        className=" text-black ml-3 w-30 h-8  hover:text-white   cursor-pointer   mt-2 hover:bg-[#ED2D77] active:bg-[#ED2D77]  mb-1 border border-[#ED2D77]">View Details</button>
       </div>
      
       
@@ -459,7 +459,7 @@ const Final = () => {
       
       <div className="flex flex-row  space-x-4">
       <div className="flex flex-col  border border-[#D9D9D9]  w-70 focus:outline-none items-start space-y-2 mt-4">
-        <p className="  ml-4 mt-3  hover:text-[#ED2D77]  font-[Brandon]  text-[20px] font-bold">Therapeutic Massage</p>
+        <p className="  ml-4 mt-3  hover:text-[#ED2D77]  cursor-pointer   font-[Brandon]  text-[20px] font-bold">Therapeutic Massage</p>
         <div className="flex mt-3 ml-1 items-center">
           <span className=" -mt-3 ml-3 text-[17px] text-[#868686]">4.9</span>
           <FaStar className="text-black -mt-3  ml-1" />
@@ -467,21 +467,21 @@ const Final = () => {
         <p className="text-[#868686] mt-1  font-sans text-[20px]  w-[245px] ml-4">combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
         <button 
          onClick={handleClick14}
-        className=" text-black ml-3 w-30 h-8  hover:bg-[#ED2D77] active:bg-[#ED2D77]    cursor-pointer  mt-2 border border-[#ED2D77]">View Details</button>
+        className=" text-black ml-3 w-30 h-8  hover:bg-[#ED2D77] active:bg-[#ED2D77]    cursor-pointer  mt-2 border   hover:text-white    border-[#ED2D77]">View Details</button>
       </div>
      {/* description 2*/}
      <div className="flex flex-col  border border-[#D9D9D9]   w-70 focus:outline-none items-start space-y-2 mt-4">
-        <p className="  ml-4 mt-3   text-[20px]  hover:text-[#ED2D77]  font-[Brandon]   font-bold">Ladies Waxing</p>
+        <p className="  ml-4 mt-3 cursor-pointer  text-[20px]  hover:text-[#ED2D77]  font-[Brandon]   font-bold">Ladies Waxing</p>
         <div className="flex mt-3 ml-1 items-center">
         <span className=" -mt-3 ml-3 text-[17px] text-[#868686]">4.9</span>
           <FaStar className="text-black -mt-3  ml-1" />
         </div>
         <p className="text-[#868686] mt-1  font-sans text-[20px]  w-[245px] ml-4">combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
         <button  onClick={handleClick15}
-        className=" text-black ml-3 w-30 h-8 mt-2 hover:bg-[#ED2D77] active:bg-[#ED2D77]    cursor-pointer  mb-1 border border-[#ED2D77]">View Details</button>
+        className=" text-black ml-3 w-30 h-8     hover:text-white mt-2 hover:bg-[#ED2D77] active:bg-[#ED2D77]    cursor-pointer  mb-1 border border-[#ED2D77]">View Details</button>
       </div>
       <div className="flex flex-col   border border-[#D9D9D9]  w-70 focus:outline-none items-start space-y-2 mt-4">
-        <p className="  ml-4 mt-3  hover:text-[#ED2D77]   text-[20px]   font-[Brandon]   font-bold">Chest Waxing</p>
+        <p className="  ml-4 mt-3 cursor-pointer  hover:text-[#ED2D77]   text-[20px]   font-[Brandon]   font-bold">Chest Waxing</p>
         <div className="flex mt-3 items-center">
         <span className=" -mt-3 ml-3 text-[17px] text-[#868686]">4.9</span>
           <FaStar className="text-black -mt-3  ml-1" />
@@ -489,10 +489,10 @@ const Final = () => {
         <p className="text-[#868686] mt-1  font-sans text-[20px]  w-[245px] ml-4">combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
         <button
            onClick={handleClick16} 
-         className=" text-black ml-3 w-30 h-8  hover:bg-[#ED2D77] active:bg-[#ED2D77]  cursor-pointer mt-2  mb-1 border border-[#ED2D77]">View Details</button>
+         className=" text-black ml-3 w-30 h-8  hover:bg-[#ED2D77] active:bg-[#ED2D77]  cursor-pointer mt-2  mb-1    hover:text-white border border-[#ED2D77]">View Details</button>
       </div>
       <div className="flex flex-col   border border-[#D9D9D9]  w-70 focus:outline-none items-start space-y-2 mt-4">
-        <p className="  ml-4 mt-3  hover:text-[#ED2D77]   font-[Brandon] text-[20px]  font-bold">Iraq Waxing</p>
+        <p className="  ml-4 mt-3  hover:text-[#ED2D77]  cursor-pointer  font-[Brandon] text-[20px]  font-bold">Iraq Waxing</p>
         <div className="flex mt-3 items-center">
         <span className=" -mt-3 ml-3 text-[17px] text-[#868686]">4.9</span>
           <FaStar className="text-black -mt-3  ml-1" />
@@ -500,7 +500,7 @@ const Final = () => {
         <p className="text-[#868686] mt-1   font-sans text-[20px]  w-[245px] ml-4">combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
         <button 
          onClick={handleClick17}
-        className=" text-black ml-3 w-30 h-8  mt-2 hover:bg-[#ED2D77] active:bg-[#ED2D77]  cursor-pointer  mb-1 border border-[#ED2D77]">View Details</button>
+        className=" text-black ml-3 w-30 h-8   hover:text-white  mt-2 hover:bg-[#ED2D77] active:bg-[#ED2D77]  cursor-pointer  mb-1 border border-[#ED2D77]">View Details</button>
       </div>
      
       
@@ -532,7 +532,7 @@ const Final = () => {
       
       <div className="flex flex-row  space-x-4">
       <div className="flex flex-col  border border-[#D9D9D9]  w-70 focus:outline-none items-start space-y-2 mt-4">
-        <p className="  ml-4 mt-3  hover:text-[#ED2D77]  font-[Brandon]  text-[20px] font-bold">Facial Threading</p>
+        <p className="  ml-4 mt-3  hover:text-[#ED2D77]  cursor-pointer font-[Brandon]  text-[20px] font-bold">Facial Threading</p>
         <div className="flex mt-3 ml-1 items-center">
           <span className=" -mt-3 ml-3 text-[17px] text-[#868686]">4.9</span>
           <FaStar className="text-black -mt-3  ml-1" />
@@ -540,11 +540,11 @@ const Final = () => {
         <p className="text-[#868686] mt-1  font-sans text-[20px]  w-[245px] ml-4">combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
         <button 
          onClick={handleClick18}
-        className=" text-black ml-3 w-30 h-8  hover:bg-[#ED2D77] active:bg-[#ED2D77]  cursor-pointer mt-2 border border-[#ED2D77]">View Details</button>
+        className=" text-black ml-3 w-30 h-8    hover:text-white hover:bg-[#ED2D77] active:bg-[#ED2D77]  cursor-pointer mt-2 border border-[#ED2D77]">View Details</button>
       </div>
      {/* description 2*/}
      <div className="flex flex-col  border border-[#D9D9D9]   w-70 focus:outline-none items-start space-y-2 mt-4">
-        <p className="  ml-4 mt-3   text-[20px]  hover:text-[#ED2D77]  font-[Brandon]   font-bold">Ladies Leg Waxing</p>
+        <p className="  ml-4 mt-3  cursor-pointer  text-[20px]  hover:text-[#ED2D77]  font-[Brandon]   font-bold">Ladies Leg Waxing</p>
         <div className="flex mt-3 ml-1 items-center">
         <span className=" -mt-3 ml-3 text-[17px] text-[#868686]">4.9</span>
           <FaStar className="text-black -mt-3  ml-1" />
@@ -552,7 +552,7 @@ const Final = () => {
         <p className="text-[#868686] mt-1  font-sans text-[20px]  w-[245px] ml-4">combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
         <button 
          onClick={handleClick19}
-        className=" text-black ml-3 w-30 h-8  cursor-pointer   mt-2 hover:bg-[#ED2D77] active:bg-[#ED2D77]   mb-1 border border-[#ED2D77]"
+        className=" text-black ml-3 w-30 h-8  cursor-pointer    hover:text-white   mt-2 hover:bg-[#ED2D77] active:bg-[#ED2D77]   mb-1 border border-[#ED2D77]"
           >View Details</button>
       </div>
       </div>
@@ -591,8 +591,8 @@ const Final = () => {
                                 <div>
                                 <div className="flex flex-row  space-x-4">
                                 <div className="flex flex-col     w-100  focus:outline-none items-start space-y-2 mt-4">
-                                  <p className=" ml-3  mt-3 font-bold">diversity of clinic </p>
-                                  <button className=" text-[#010101] ml-3 w-25 h-8  mb-1 border border-[#EE2478]">Get the App</button>
+                                  <p className=" ml-3   cursor-pointer  hover:text-[#ED2D77] mt-3 font-bold">diversity of clinic </p>
+                             <button className=" text-[#010101] cursor-pointer hover:bg-[#ED2D77]     hover:text-white  ml-3 w-25 h-8  mb-1 border border-[#EE2478]">Get the App</button>
                                 </div>
                               </div>
                             
@@ -600,8 +600,8 @@ const Final = () => {
                             <div>
                                 <div className="flex flex-row  space-x-4">
                                 <div className="flex flex-col  ml-5    w-100  focus:outline-none items-start space-y-2 mt-4">
-                                  <p className=" ml-3  mt-3 font-bold">diversity of clinic </p>
-                                  <button className=" text-[#010101] ml-3 w-25 h-8  mb-1 border border-[#EE2478]">Get the App</button>
+                                  <p className=" ml-3   cursor-pointer  hover:text-[#ED2D77]  mt-3 font-bold">diversity of clinic </p>
+                                  <button className=" text-[#010101] ml-3 w-25 h-8  mb-1 border border-[#EE2478]   hover:text-white  cursor-pointer hover:bg-[#ED2D77] ">Get the App</button>
                                 </div>
                               </div>
                             
@@ -610,8 +610,8 @@ const Final = () => {
                             <div>
                                 <div className="flex flex-row  space-x-4">
                                 <div className="flex flex-col  ml-10  w-100  focus:outline-none items-start space-y-2 mt-4">
-                                  <p className="ml-3  mt-3 font-bold">diversity of clinic </p>
-                                  <button className=" text-[#010101] ml-3 w-25 h-8  mb-1 border border-[#EE2478]">Get the App</button>
+                                  <p className="ml-3  cursor-pointer  hover:text-[#EE2478]  mt-3 font-bold">diversity of clinic </p>
+                                  <button className=" text-[#010101]  cursor-pointer hover:bg-[#ED2D77]  ml-3 w-25 h-8  mb-1 border   hover:text-white   border-[#EE2478]">Get the App</button>
                                 </div>
                               </div>
                             
@@ -637,11 +637,11 @@ const Final = () => {
                  </div>
          {/*   download slider image */}
      <div className="space-x-2 ml-7 mt-15">
-      <Swiper spaceBetween={15} slidesPerView={4} loop={true} autoplay={{ delay: 300}}>
+      <Swiper spaceBetween={15} slidesPerView={4} loop={true} autoplay={{ delay:0, disableOnInteraction: false}}   speed={3000}  freeMode={true}   grabCursor={true}>
         {images.map((img, index) => (
           <SwiperSlide key={index}>
             <div className="space-x-2">
-              <img src={img} alt={`Slide ${index + 1}`} className="w-70" />
+              <img src={img} alt={`Slide ${index + 3}`} className="w-70" />
             </div>
           </SwiperSlide>
         ))}
@@ -655,12 +655,12 @@ const Final = () => {
               <p className='text-[#000000]   font-bold  text-[35px]'> <span className='text-[#EE2478] font-bold text-[35px]'>Download</span> our APP</p>
               <p className='text-[13px]  text-[#010101] w-[400px]'>quis nostrud exerci tation ullamcorper suscipit lobor nisl ut aliquip ex
               consequat. Duis aute vel eum  iriure dolor in  hendrerit in.</p>
-              <button className=" text-[#010101] w-25 h-8  mt-3  text-[13px] border border-[#EE2478]">Get the App</button>
+              <button className=" text-[#010101] w-25 h-8  mt-3   hover:text-white  cursor-pointer hover:bg-[#ED2D77] text-[13px]    hover:text-white border border-[#EE2478]">Get the App</button>
                <div className="flex space-x-3 mt-4">
-                              <div className="w-[100px] h-[41px]">
+                              <div className="w-[100px]   cursor-pointer h-[41px]">
                                   <img      src={google}/>
                               </div>
-                              <div  className="w-[100px] h-[41px]" >
+                              <div  className="w-[100px]  cursor-pointer   h-[41px]" >
                               <img     src={appapple}/>
                               </div>
                           </div>
@@ -699,16 +699,16 @@ const Final = () => {
               <p  className='font-sans text-[13px]  w-[490px] text-[#000000]'>simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                 been the industry's standard dummy text ever since the 1500s, when an unknown
                 printer took a galley of type and scrambled it to make a type specimen book. </p>
-              <button className=" text-[#010101]  w-25 h-8 mt-4 mb-1 border border-[#EE2478]">Get the App</button>
-              <div className='w-[330px] h-[39px] flex mt-5 space-x-20' >
+              <button className=" text-[#010101]  cursor-pointer hover:bg-[#ED2D77]   w-25 h-8 mt-4 mb-1    hover:text-white border  hover:shadow-[#ED2D77] border-[#EE2478]">Get the App</button>
+              <div className='w-[500px] h-[39px] flex mt-5 space-x-20' >
              <div className='flex space-x-1 '>
          
             <div className='text-[#000000] space-x-2 '><Headphones size={20} /></div>
-           <p className='text-[#0C0C0C] font-bold   font-[Brandon] text-[12px]'>Customer Help Centre</p>
+           <p className='text-[#0C0C0C] font-bold  cursor-pointer hover:text-[#ED2D77]  font-[Brandon] text-[18px]'>Customer Help Centre</p>
            </div>
-          <div className='flex space-x-1  '>
-          <div className='text-[#000000] '><MessageCircleMore size={20} /></div> 
-         <p className='   text-[#0C0C0C]  font-bold  font-[Brandon] text-[12px]'>Chat support</p>
+          <div className='flex space-x-1 '>
+          <div className='text-[#000000] hover:text-[#ED2D77] '><MessageCircleMore size={20} /></div> 
+         <p className='   text-[#0C0C0C]  font-bold  cursor-pointer hover:text-[#ED2D77] font-[Brandon] text-[18px]'>Chat support</p>
            </div>
             </div>
 

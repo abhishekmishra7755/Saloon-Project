@@ -84,8 +84,8 @@ const handleSign = () => {
         >
           <ArrowLeft className="" /> 
         </button>
-        <h1 className="text-xl  -ml-77   font-bold mt-5">Tajmeel for Professional</h1>
-        <p className=" text-[#000000]  font-sans -ml-35 p-3 mb-2">Create an account or log in to      manage your business.
+        <h1 className="text-xl  -ml-55 text-[30px] font-[crimson]  text-[sans] font-bold mt-5">Tajmeel for Professional</h1>
+        <p className=" text-[#000000] text-[18px]  font-sans -ml-25 p-3 mb-2">Create an account or log in to      manage your business.
         </p>
         {successMessage && (
           <div className="text-green-500 text-center mb-4">
@@ -104,7 +104,7 @@ const handleSign = () => {
                  message: "Invalid email format",
                },
              })}
-          className="w-full p-2  rounded-b-sm  mb-4 hover:bg-gray-100 text-[#878787] border border-[#C2C2C2] focus:outline-none focus:ring-2 "
+          className="w-full p-2  rounded-b-sm  text-[20px]    h-[55px]    mb-4 hover:bg-gray-100 text-[#878787] border border-[#C2C2C2] focus:outline-none focus:ring-2 "
         />
          {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
          </div>
@@ -120,7 +120,7 @@ const handleSign = () => {
                  message: "Password must contain letters & numbers",
                },
              })}
-            className="w-full p-2  rounded-b-sm  mb-4  hover:bg-gray-100 text-[#878787] border border-[#C2C2C2] focus:outline-none focus:ring-2 "
+            className="w-full p-2   text-[20px]    h-[55px]  rounded-b-sm  mb-4  hover:bg-gray-100 text-[#878787] border border-[#C2C2C2] focus:outline-none focus:ring-2 "
           />
           <button
           type="button"
@@ -134,12 +134,12 @@ const handleSign = () => {
             {errors.password && <p className="text-red-500   text-sm mt-2">{errors.password.message}</p>}
 
             <div className='mt-7'>
-            <button type="submit" className="w-full bg-[#2B2B2B] h-[50px] hover:bg-[#EE2478]  cursor-pointer rounded-b-lg text-[#FFFFFF] py-2 transition">
+            <button type="submit" className="w-full bg-black h-[55px] hover:bg-[#EE2478]  cursor-pointer  rounded  text-[20px]  rounded-b-lg text-[#FFFFFF] py-2 transition">
               Continue
             </button>
             </div>
             </form>
-        <div className="flex items-center w-full my-4">
+        <div className="flex items-center  -mt-40 w-full my-4">
           <div className="flex-grow border-t   border-[#C2C2C200]  bg-[#5C5C5C]"></div>
           <span className="mx-2 text-[#000000]">or</span>
           <div className="flex-grow border-t bg-[#5C5C5C]"></div>
@@ -148,26 +148,26 @@ const handleSign = () => {
 
         <button
           onClick={handleFacebookLogin}
-         className="w-full flex items-center justify-center gap-2 cursor-pointer  hover:bg-gray-100  border border-[#C2C2C2]  text-[#000000] py-2 rounded-b-sm mb-4   transition">
+         className="w-full flex items-center justify-center gap-2 cursor-pointer    border border-[#C2C2C2]    hover:border-[#EE2478]  text-[20px]    h-[120px]   hover:text-[#EE2478]   text-[#000000] py-2 rounded-b-sm mb-4   transition">
         <div> <img src={fa1}  className='space-y-5' /></div>
          Continue with Facebook 
         </button>
         <button
         onClick={handleGoogleLogin}
-         className="w-full flex border  font-sans  cursor-pointer   rounded-b-sm items-center text-[#000000]  border-[#C2C2C2] justify-center  py-2  mb-4 hover:bg-gray-100 transition">
+         className="w-full flex border  font-sans  text-[20px]    h-[120px]   cursor-pointer   rounded-b-sm items-center text-[#000000]  border-[#C2C2C2]      hover:border-[#EE2478]   hover:text-[#EE2478] justify-center  py-2  mb-4  transition">
           <div> <img src={ga}  className='-ml-2' /></div>
           Continue with Google
         </button>
 
         <button 
         onClick={handleSign}
-        className="w-full flex border  font-sans  cursor-pointer   rounded-b-sm items-center text-[#000000]  border-[#C2C2C2] justify-center  py-2  mb-4 hover:bg-gray-100 transition">
+        className="w-full flex border  font-sans  text-[20px]    h-[120px]   cursor-pointer   rounded-b-sm items-center text-[#000000]  hover:border-[#EE2478]   hover:text-[#EE2478]   border-[#C2C2C2] justify-center  py-2  mb-4  transition">
         <div>
         <img src={sign}  className='-ml-2' />
         </div>
           Continue with SignUp
         </button>
-        <p className="mt-3   flex-col text-[#000000]">
+        <p className="mt-3  text-[20px] flex-col text-[#000000]">
            Are you a customer looking to book an appointment?
           <a href="/customer" className="text-[#EE2478] flex ml-20 hover:underline">Go to Tajmeel for Customers</a>
         </p>

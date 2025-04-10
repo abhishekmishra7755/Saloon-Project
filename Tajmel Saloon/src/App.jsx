@@ -38,6 +38,8 @@ import ChangePassword from './Pages/ChangePassword';
 import Bookings from './Pages/Bookings';
 import MyProfile from './Pages/MyProfile';
 import ShoppingCart from './Pages/ShoppingCart';
+import ForgotPassword from './Pages/ForgotPassword';
+import ResetPassword from './Pages/ResetPassword';
 
 
 
@@ -78,6 +80,8 @@ function App() {
             <Route path="/service" element={<Service />} />
             <Route path="/massage" element={<Massage/>} />
             <Route path="/customer" element={<Customer />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+             <Route path="/reset-password/:token" element={<ResetPassword />} />
             <Route path="/professional" element={<Professional />} />
             <Route path="/listing" element={<Listing />} />
             <Route path='/listingdetails' element= {<ListingDetails/>}/>

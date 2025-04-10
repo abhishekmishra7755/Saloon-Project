@@ -86,26 +86,26 @@ const { register, handleSubmit, formState: { errors } } = useForm();
           >
             <ArrowLeft className="" /> 
           </button>
-          <h1 className="text-xl  -ml-77  font-bold mt-8">Tajmeel for Customers</h1>
-          <p className=" text-[#000000]  font-sans -ml-8 p-3 mb-2">Create an account or log in to book and manage your appointments</p>
+          <h1 className=" -ml-55 text-[30px] font-[crimson]  text-[sans]  font-bold mt-8">Tajmeel for Customers</h1>
+          <p className=" text-[#000000] text-[20px]  font-sans -ml-8 p-3 mb-2">Create an account or log in to manage your business.</p>
   
           <button 
           onClick={handleFacebookLogin}
-          className="w-full flex border  font-sans  rounded-b-sm   cursor-pointer  items-center text-[#000000]  border-[#C2C2C2] justify-center  py-2  mb-4 hover:bg-gray-100 transition">
+          className="w-full flex border  h-[120px]  hover:border-[#EE2478]   hover:text-[#EE2478]   font-sans  rounded-b-sm text-[20px]  cursor-pointer  items-center text-[#000000]  border-[#C2C2C2] justify-center  py-2  mb-4  transition">
          {/*   <FcGoogle className="mr-2 " /> Continue with Google */}
            <div> <img src={fa1}  className='-ml-2' /></div>
            Continue with Facebook
           </button>
           <button 
           onClick={handleGoogleLogin}
-          className="w-full flex border  font-sans  rounded-b-sm   cursor-pointer  items-center text-[#000000]  border-[#C2C2C2] justify-center  py-2  mb-4 hover:bg-gray-100 transition">
+          className="w-full flex border h-[120px]  text-[20px]  hover:border-[#EE2478]   hover:text-[#EE2478]  font-sans  rounded-b-sm   cursor-pointer  items-center text-[#000000]  border-[#C2C2C2] justify-center  py-2  mb-4  transition">
          {/*   <FcGoogle className="mr-2 " /> Continue with Google */}
            <div> <img src={ga}  className='-ml-2' /></div>
            Continue with Google
           </button>
           <button 
           onClick={handleSignup }
-          className="w-full flex border  font-sans  rounded-b-sm   cursor-pointer  items-center text-[#000000]  border-[#C2C2C2] justify-center  py-2  mb-4 hover:bg-gray-100 transition">
+          className="w-full flex border hover:border-[#EE2478]  text-[20px]    h-[120px]  hover:text-[#EE2478]  font-sans  rounded-b-sm   cursor-pointer  items-center text-[#000000]  border-[#C2C2C2] justify-center  py-2  mb-4 transition">
             {/* <FcGoogle className="mr-2 " />  */}
            <div>
            <img src={sign}  className='-ml-2' />
@@ -130,7 +130,7 @@ const { register, handleSubmit, formState: { errors } } = useForm();
               message: "Invalid email format",
               },
             })}
-            className="w-full p-2  rounded-b-sm  mb-4 hover:bg-gray-100  text-[#878787] border border-[#C2C2C2] focus:outline-none focus:ring-2 "
+            className="w-full p-2  text-[20px]    h-[55px]   rounded-b-sm  mb-4 hover:bg-gray-100  text-[#878787] border border-[#C2C2C2] focus:outline-none focus:ring-2 "
           />
            {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
           </div>
@@ -147,7 +147,7 @@ const { register, handleSubmit, formState: { errors } } = useForm();
                  message: "Password must contain letters & numbers",
                },
              })}
-            className="w-full p-2  rounded-b-sm  mb-4  hover:bg-gray-100 text-[#878787] border border-[#C2C2C2] focus:outline-none focus:ring-2 "
+            className="w-full p-2  text-[20px]    h-[55px]    rounded-b-sm  mb-4  hover:bg-gray-100 text-[#878787] border border-[#C2C2C2] focus:outline-none focus:ring-2 "
           />
           <button
           type="button"
@@ -160,17 +160,21 @@ const { register, handleSubmit, formState: { errors } } = useForm();
             {/* Error Message */}
             {errors.password && <p className="text-red-500   text-sm mt-2">{errors.password.message}</p>}
             <div className='mt-7'>
-            <button type="submit" className="w-full bg-[#2B2B2B] h-[50px] hover:bg-[#EE2478]  cursor-pointer rounded-b-lg text-[#FFFFFF] py-2 transition">
+            <button type="submit" className="w-full bg-black rounded  h-[55px] hover:bg-[#EE2478]   text-[20px]   cursor-pointer rounded-b-lg text-[#FFFFFF] py-2 transition">
               Continue
+            </button>
+
+            <button type="submit" className="w-full bg-black mt-5 rounded  h-[55px] hover:bg-[#EE2478]  cursor-pointer rounded-b-lg text-[#FFFFFF] py-2 transition">
+              <a href="/forgot-password" className="text-[#FFFFFF] text-[20px] ">Forgot Password</a>
             </button>
             </div>
             {SuccessMessage && <p className="text-green-500">{SuccessMessage}</p>}
             {/* Your form goes here */}
           </form>
   
-          <p className="mt-6   flex-col text-[#000000]">
-            Have a business account? 
-            <a href="/professional" className="text-[#EE2478] flex ml-1 hover:underline">Sign in as a Professional</a>
+          <p className=" -mt-40   text-[20px] flex-col text-[#000000]">
+          Are you a customer looking to book an appointment?
+            <a href="/professional" className="text-[#EE2478] flex ml-30  hover:text-black   hover:underline">Sign in as a Professional</a>
           </p>
           <div className='w-[266px] h-[39px] flex -ml-63 space-x-27  mt-30' >
         <div className='flex w-[20px]  space-x-3 h-[20px]'>
