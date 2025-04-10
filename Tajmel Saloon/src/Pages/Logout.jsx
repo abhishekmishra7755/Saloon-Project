@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Logout = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     // Start loading
@@ -13,16 +13,16 @@ const Logout = () => {
     // Simulate a short delay (e.g., processing time)
     setTimeout(() => {
       // Clear authentication data
-      localStorage.removeItem('authToken');
-      sessionStorage.removeItem('authToken');
+      localStorage.removeItem("authToken");
+      sessionStorage.removeItem("authToken");
 
       // Show logout success message
-      setMessage('Logout successful. Redirecting to login...');
+      setMessage("Logout successful. Redirecting to login...");
       setLoading(false);
 
       // Redirect to login after 2 seconds
       setTimeout(() => {
-        navigate('/login');
+        navigate("/login");
       }, 2000);
     }, 1500);
   }, [navigate]);
@@ -32,7 +32,9 @@ const Logout = () => {
       <div className="bg-white p-6 rounded-lg shadow-lg text-center">
         {loading ? (
           <>
-            <p className="text-lg font-semibold text-gray-700">Logging out...</p>
+            <p className="text-lg font-semibold text-gray-700">
+              Logging out...
+            </p>
             <p className="text-gray-500">Please wait a moment.</p>
           </>
         ) : (
