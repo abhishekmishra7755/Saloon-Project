@@ -74,7 +74,7 @@ const handleSign = () => {
 };
 
     return (
-      <div className="min-h-screen flex">
+      <div className="min-h-screen flex ">
       {/* Left Section (Form) */}
       <div className="w-1/2 bg-white flex  
       
@@ -169,7 +169,7 @@ const handleSign = () => {
         </button>
         <p className="mt-3  text-[20px] flex-col text-[#000000]">
            Are you a customer looking to book an appointment?
-          <a href="/customer" className="text-[#EE2478] flex ml-20 hover:underline">Go to Tajmeel for Customers</a>
+          <a href="/customer" className="text-[#EE2478] flex ml-30 hover:underline">Go to Tajmeel for Customers</a>
         </p>
         <div className='w-[266px] h-[39px] flex -ml-63 space-x-27  mt-30' >
       <div className='flex w-[20px]  space-x-3 h-[20px]'>
